@@ -108,9 +108,17 @@
         /* background: white; */
       }
 
-      #paragraph {
+      #paragraph,
+      p {
         color: white;
         margin: 2;
+        font-size: medium;
+      }
+
+      ul,
+      a {
+        list-style-type: none;
+        font-size: medium;
       }
 
       .center {
@@ -118,6 +126,23 @@
         margin-left: auto;
         margin-right: auto;
         width: 50%;
+      }
+
+      img {
+        -webkit-transform: scale(1.5); /* Saf3.1+, Chrome */
+        -moz-transform: scale(1.5); /* FF3.5+ */
+        -ms-transform: scale(1.5); /* IE9 */
+        -o-transform: scale(1.5); /* Opera 10.5+ */
+        transform: scale(1.5);
+        /* IE6–IE9 */
+        filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9999619230641713, M12=-0.008726535498373935, M21=0.008726535498373935, M22=0.9999619230641713,SizingMethod='auto expand');
+      }
+
+      ​ .centerDiv {
+        margin: auto;
+        width: 50%;
+        border: 3px solid green;
+        padding: 10px;
       }
     </style>
   </head>
@@ -137,8 +162,9 @@
       </div>
     </nav>
 
+    <br /><br /><br /><br /><br />
     <!-- Custom -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide centerDiv" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      /* [ON BIG SCREEN] */
+      /* Wrapper */
+      #hamnav {
+        width: 100%;
+        background: #55577e;
+        /* Optional */
+        position: sticky;
+        top: 0;
+      }
+
+      /* Hide Hamburger */
+      #hamnav label,
+      #hamburger {
+        display: none;
+      }
+
+      /* Horizontal Menu Items */
+      #hamitems {
+        display: flex;
+      }
+      #hamitems a {
+        width: 20%; /* 100% / 5 tabs = 20% */
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+      }
+      #hamitems a:hover {
+        background: black;
+        color: white;
+      }
+
+      /* [ON SMALL SCREENS] */
+      @media screen and (max-width: 768px) {
+        /* Show Hamburger Icon */
+        #hamnav label {
+          display: inline-block;
+          color: white;
+          background: black;
+          font-style: normal;
+          font-size: 1.2em;
+          padding: 10px;
+        }
+
+        /* Break down menu items into vertical */
+        #hamitems a {
+          box-sizing: border-box;
+          display: block;
+          width: 100%;
+          border-top: 1px solid black;
+        }
+
+        /* Toggle Show/Hide Menu */
+        #hamitems {
+          display: none;
+        }
+        #hamnav input:checked ~ #hamitems {
+          display: block;
+        }
+      }
+
+      /* [DOES NOT MATTER] */
+      body {
+        /* background-image: url("main.gif"); */
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: xx-large;
+        text-align: right;
+
+        padding: 0;
+        margin: 0;
+        margin-left: 55px;
+        margin-right: 55px;
+      }
+      html {
+        height: 100%;
+      }
+
+      .blink_me {
+        animation: blinker 1s linear infinite;
+      }
+
+      #footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px; /* Height of the footer */
+        color: white;
+        /* background: white; */
+      }
+
+      #paragraph,
+      p {
+        color: white;
+        margin: 2;
+        font-size: medium;
+      }
+
+      ul,
+      a {
+        list-style-type: none;
+        font-size: medium;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="hamnav">
+      <!-- [THE HAMBURGER] -->
+      <label for="hamburger">&#9776;</label>
+      <input type="checkbox" id="hamburger" />
+
+      <!-- [MENU ITEMS] -->
+      <div id="hamitems">
+        <a href="index.html">Home</a>
+        <a href="story.html">Story</a>
+        <a href="gallery.html">Gallery </a>
+        <a href="car.html">Cars</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+
+    <!-- Custom -->
+    <h2>From Love</h2>
+    <hr />
+    <p>
+      From love is born obligation. When he was but a child, my fathers wanted
+      to be free, to travel the world; he was a pirate of a man. He wanted to
+      steal adventure, the hearts of woman, perhaps even life itself. In a
+      hollywood movie such a mans would be the hero of tales; but in reality
+      most of these types of man are blind; never realizing that everyone else
+      also thinks themself to be the hero. Funny thought yes? Afteralls, if
+      everyone was a hero, why is the world not at peace? We know the answer
+      don't we: because most people are not the heroes they desires to be, and
+      the world probably doesnt deserve the heroes of the movies. What we
+      <i>do</i>
+      deserve may be something else entirley.
+    </p>
+    <p>
+      And so this is the story. When my father was a pirate is in his late 20s,
+      he tried to steal the heart of a woman who was a nurse. She was not
+      stolen--too smart to be--but a woman may be at times in her hauty natures,
+      open to short relationships even with those maybe not best suited for
+      their well being, and such was this case.
+    </p>
+    <p>
+      They had an affair... an literal affair; the nurse was engaged to one
+      another; whom she did not love but who could provide for her. He was an
+      older gentleman; a former doctor, retired. They snuck around their
+      relationship, but the doctor eventual learned of his fiances' affair and
+      this woman lost her engagement with the doctors.
+    </p>
+    <p>
+      'You must take responsibility', the woman told me father, 'Those in our
+      circles know of our affair and speak ills about me. Marry me instead of
+      the doctor to right our wrongs and decisions.'; but alas, my father was
+      nothing but a pirate afterall, and he left on the seas of irresponsibility
+      leaving the woman <i>alone...</i> or so he thought? What my fathers did
+      not know, was that he hads left the woman with a parting gift; the essence
+      of a child within her.
+    </p>
+    <p>
+      Now you can maybe guess the secret before I even tell you, yes?
+      <i>The nurse was my mother</i>, and I was the unborns child within her.
+      When my mother learn of her pregnancy she wrote the letters across the
+      world, sent the message through the telephone lines to find this pirate of
+      a man... but there was no answers. This man seemed to stop being a pirate;
+      more like a ghost he seemed.
+    </p>
+    <p>
+      <i
+        >'There is no way this man, through all my hard work of findings him,
+        did not at least receives one message of the news of my pregnancy',</i
+      >
+      my mother thoughts. So she resign herself to the reality; yes, this man
+      knew of his unborn child but it was just simple harsh truth; this pirate
+      of a man did not care.
+    </p>
+    <p>
+      So it was that my mother got larger and larger each months, pregnant with
+      childs and no husband beside her. There were manys who looked down at her:
+      'This promoscious woman have child... and with whom?' There was no one my
+      mother could say who it was, so the whispers... they talked, and they grew
+      and grew. Yes, of course, the people and whispers said; my mother was
+      'promiscuous', a 'cheat', 'no good'. They felt vitriols for the woman, and
+      pity for me, the unborn child of a bastard relationships.
+    </p>
+    <p>
+      And then one day it happen; the pain she think was regular turn out not to
+      be so regular... and on a January day I come into the world; actually
+      months before anyones could have expected; so earlyer than expected due
+      date that in facts that it was too dangerous for both myself and my
+      mothers.
+    </p>
+    <p>***</p>
+    <p>
+      My fathers was at university at the times; not as a student, but just
+      literallys at a university, with other young peoples stealing what
+      adventures he could when he got a message from a third cousins removed;
+      'The woman you got pregnant has delivered your son. Neither are doing
+      well; they are both on the brink of trouble.'
+    </p>
+    <p>
+      This is what my fathers told me he got tell, from this cousin he not seen
+      ever in his life. 'On the brink of trouble?' He did not knows what it
+      meant; firstly, did it mean that this woman and her son was near death
+      after giving birth, or were they in trouble of another means? And
+      secondly; father was confuse because despites my mothers efforts, he had
+      never actual reseived any of her desperate attempt to contact him. This
+      was first time he hear that shes pregnant; and now it is not just news
+      that she pregananant but also that she already delivered his son and that
+      they might both be close to deaths?
+    </p>
+    <p>
+      I start this story, and I say the words: 'From love is born obligation.'
+      This is not actually my words; this is my fathers. This is the words he
+      say to my mother when he walk into the hospital room, and the doctor say
+      there's a chance she cannot make it through the next week. 'I loved my son
+      when I first heard of him', he had told her. 'And from love is born
+      obligation'. This is the translation of his words to my dying mother.
+    </p>
+    <p>
+      This pirate of a man, who tried to steal life away, perhaps had his own
+      stolen away by the circumstances; as he would tell me as i grew up, 'But
+      such is the fate of those who love others as I loved you', he would often
+      said to me during bedtime story, 'And such is the fate of a man who
+      learned to love your mother.'
+    </p>
+    <p>
+      During that week where my mothers could have lived or dies, she say that
+      every day my father come to her room with me in his arm and sit with her;
+      telling her stories of why he was the way he was so piratey; he grow up
+      poor, sometime go days without food, ins his most craziest dream he could
+      never dream of living or dieings anywhere but the small towns he grow up,
+      but like magic; when he gots to be a man he was strong enough to take life
+      by its horns, so why should he nots? yes, why should he not do as he
+      please and travels and such? This was how he thought; but still-if he had
+      to take his freedom in exchanges for her lifes and mine to be takens away;
+      what kind of mans would he be? At this point; he promise his place in her
+      life forever; and like a magic spell; she got better from thens.
+    </p>
+    <p>
+      This is the story of how a person like me came to be; an obligation who
+      formed love, solidified through a magic spell. It is not a fairy tale you
+      see in the movies, and there is no hero in the ways hollywood can write;
+      all the characters are quites flawed, no? but perhaps our ideas of
+      'heroes' do not come in the form of people. Perhaps our 'heroes', they
+      come in the form of events; in the blessings that fall upon us even
+      despite our worst characteristics.
+    </p>
+  </body>
+</html>
