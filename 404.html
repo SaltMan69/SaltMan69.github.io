@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <title></title>
+  </header>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="salticon.png" />
+    <style>
+      /* [ON BIG SCREEN] */
+      /* Wrapper */
+      #hamnav {
+        width: 100%;
+        background: #55577e;
+        /* Optional */
+        position: sticky;
+        top: 0;
+      }
+
+      /* Hide Hamburger */
+      #hamnav label,
+      #hamburger {
+        display: none;
+      }
+
+      /* Horizontal Menu Items */
+      #hamitems {
+        display: flex;
+      }
+      #hamitems a {
+        width: 20%; /* 100% / 5 tabs = 20% */
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+      }
+      #hamitems a:hover {
+        background: black;
+        color: white;
+      }
+
+      /* [ON SMALL SCREENS] */
+      @media screen and (max-width: 768px) {
+        /* Show Hamburger Icon */
+        #hamnav label {
+          display: inline-block;
+          color: white;
+          background: black;
+          font-style: normal;
+          font-size: 1.2em;
+          padding: 10px;
+        }
+
+        /* Break down menu items into vertical */
+        #hamitems a {
+          box-sizing: border-box;
+          display: block;
+          width: 100%;
+          border-top: 1px solid black;
+        }
+
+        /* Toggle Show/Hide Menu */
+        #hamitems {
+          display: none;
+        }
+        #hamnav input:checked ~ #hamitems {
+          display: block;
+        }
+      }
+
+      /* [DOES NOT MATTER] */
+      body {
+        background-image: url("404.gif");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: xx-large;
+        text-align: right;
+        color: white;
+      }
+      html {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="hamnav">
+      <!-- [THE HAMBURGER] -->
+      <label for="hamburger">&#9776;</label>
+      <input type="checkbox" id="hamburger" />
+
+      <!-- [MENU ITEMS] -->
+      <div id="hamitems">
+        <a href="/">Home</a>
+        <a href="story">Story</a>
+        <a href="gallery">Gallery </a>
+        <a href="car">Cars</a>
+        <a href="about">About</a>
+      </div>
+    </nav>
+  </body>
+</html>
