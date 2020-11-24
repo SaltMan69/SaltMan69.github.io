@@ -1,5 +1,7 @@
+<!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       /* [ON BIG SCREEN] */
       /* Wrapper */
@@ -62,31 +64,51 @@
         }
       }
 
+      /* [DOES NOT MATTER] */
       body {
-        text-align: center;
+        /* background-image: url("main.gif"); */
         background-color: black;
-        color: red;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
         font-family: Georgia, "Times New Roman", Times, serif;
         font-size: xx-large;
-        text-align: center;
-        background-image: url("https://thumbs.gfycat.com/AngryWavyBird-size_restricted.gif");
-        background-size: cover;
+        text-align: right;
 
-        height: 100vh;
         padding: 0;
         margin: 0;
         margin-left: 55px;
         margin-right: 55px;
+      }
+      h2,
+      p {
+        /* background-image: url("main.gif"); */
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: xx-large;
+        text-align: right;
+        color: white;
+      }
+      html {
+        height: 100%;
       }
 
       .blink_me {
         animation: blinker 1s linear infinite;
       }
 
-      @keyframes blinker {
-        50% {
-          opacity: 0;
-        }
+      #footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px; /* Height of the footer */
+        color: white;
+        /* background: white; */
+      }
+
+      #paragraph {
+        color: white;
       }
     </style>
   </head>
@@ -106,8 +128,10 @@
       </div>
     </nav>
 
-    <br /><br /><br />
-    <div class="blink_me"><b>HAPPY BIRTHDAY GLOSSY!</b></div>
-    <br /><br /><br />
+    <!-- Custom -->
+    <p id="paragraph">
+      Here's is some one off projects for fun and friends. Celebrations and
+      salutations brothers and sisters.
+    </p>
   </body>
 </html>
